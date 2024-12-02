@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Graphic Design</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Contact Section */
+        section.contact {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        section.contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        section.contact .contact-info,
+        section.contact .contact-form {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        section.contact .contact-info div,
+        section.contact .contact-form div {
+            width: 45%;
+        }
+
+        section.contact .contact-info h3 {
+            font-size: 1.8rem;
+        }
+
+        section.contact .contact-info p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        section.contact .contact-form input,
+        section.contact .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        section.contact .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        section.contact .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div>
+                <h3>Our Office</h3>
+                <p>123 Design Street, Suite 101<br>City, State, 12345</p>
+            </div>
+            <div>
+                <h3>Email Us</h3>
+                <p>contact@yourcompany.com</p>
+            </div>
+            <div>
+                <h3>Call Us</h3>
+                <p>+1 234 567 890</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <div>
+                <h3>Send Us a Message</h3>
+                <form action="submit_form.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 [Your Company Name]. All rights reserved.</p>
+        <p>Follow us on <a href="https://www.instagram.com" target="_blank">Instagram</a> for more updates and design inspiration!</p>
+    </footer>
+
+</body>
+</html>
